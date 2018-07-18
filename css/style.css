@@ -35,7 +35,6 @@
 
 nav {
   background-color: #E1E1E1;
-  padding: 5px 0;
 }
 
 nav label {
@@ -61,7 +60,6 @@ nav ul li {
 
 nav ul li:hover {
   background-color: #555555;
-  border-radius: 3px;
 }
 
 nav ul li:hover a {
@@ -75,7 +73,7 @@ nav ul li a {
   font-size: 16px;
   border-right: 1px solid #555555;
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 nav ul li .last-time {
@@ -100,18 +98,12 @@ nav ul .dropdown .dropbtn {
   cursor: pointer;
 }
 
-nav ul .dropdown .dropbtn:hover {
-  background-color: #555555;
-  color: white;
-}
-
 nav ul .dropdown .dropdown-content {
   display: none;
   position: absolute;
   background-color: #555555;
   min-width: 160px;
   margin-top: 10px;
-  position: relative;
 }
 
 nav ul .dropdown .dropdown-content a {
@@ -132,7 +124,6 @@ nav ul .dropdown .dropdown-content a:hover {
 }
 
 nav ul .dropdown:hover {
-  background-color: #555555;
   color: white;
   border-radius: 3px 3px 0 0;
 }
@@ -186,6 +177,7 @@ nav ul .dropdown:hover .dropbtn {
   color: white;
   cursor: pointer;
   border-radius: 3px;
+  transition: 0.5s;
 }
 
 .btn:hover {
@@ -227,6 +219,7 @@ nav ul .dropdown:hover .dropbtn {
   border: none;
   margin-top: 15px;
   margin-bottom: 80px;
+  transition: 0.5s;
 }
 
 #eggs .photo-eggs .photo button:hover {
@@ -290,7 +283,7 @@ nav ul .dropdown:hover .dropbtn {
 }
 
 #services .flex-services .services-list ul {
-  margin-left: 50px;
+  margin-left: 80px;
   list-style-type: none;
   display: flex;
   justify-content: flex-start;
@@ -304,8 +297,8 @@ nav ul .dropdown:hover .dropbtn {
 }
 
 #services .flex-services .services-list ul li img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-right: 50px;
 }
 
@@ -321,6 +314,7 @@ nav ul .dropdown:hover .dropbtn {
 
 #services .flex-services .services-production p {
   line-height: 1.5;
+  margin-left: 5%;
 }
 
 #services .flex-services .services-production button {
@@ -339,6 +333,7 @@ nav ul .dropdown:hover .dropbtn {
 
 #services .flex-services .services-technology p {
   line-height: 1.5;
+  margin-right: 5%;
 }
 
 #services .flex-services .services-technology button {
@@ -377,6 +372,7 @@ nav ul .dropdown:hover .dropbtn {
   color: white;
   cursor: pointer;
   border-radius: 3px;
+  transition: 0.5s;
 }
 
 #gallery .button-flex .btn-gallery:hover {
@@ -497,7 +493,7 @@ footer .copyright h4 {
 }
 
 @media (max-width: 991px) {
-  header .top-navbar ul {
+  header .top-navbar {
     display: none;
   }
   header nav {
@@ -511,6 +507,10 @@ footer .copyright h4 {
     font-size: 32px;
     float: right;
     clear: both;
+    transition: 0.3s;
+  }
+  header nav label:hover {
+    color: white;
   }
   header nav ul {
     display: none;
@@ -539,6 +539,7 @@ footer .copyright h4 {
   }
   header nav ul .dropdown .dropdown-content {
     width: 100%;
+    position: relative;
   }
   header nav ul .dropdown .dropdown-content a {
     font-size: 20px;
@@ -565,14 +566,15 @@ footer .copyright h4 {
   }
   #about-us {
     height: auto;
-    padding: 0 40px 10px 40px;
+    padding: 0 100px 10px 100px;
+    margin-bottom: 30px;
   }
   #about-us p {
     font-size: 16px;
   }
   #services .flex-services div {
     width: 100%;
-    margin: 0 40px;
+    margin: 0 10px;
   }
   #services .flex-services .services-list {
     display: flex;
@@ -581,7 +583,6 @@ footer .copyright h4 {
   }
   #services .flex-services:first-child img {
     height: 300px;
-    padding-top: 30px;
   }
   #services .flex-services .services-production {
     text-align: center;
@@ -593,6 +594,7 @@ footer .copyright h4 {
   }
   #services .flex-services .services-production p {
     font-size: 14px;
+    margin: 0 100px;
   }
   #services .flex-services .services-production button {
     margin: 15px 0 60px 0;
@@ -607,6 +609,7 @@ footer .copyright h4 {
   }
   #services .flex-services .services-technology p {
     font-size: 14px;
+    margin: 0 100px;
   }
   #services .flex-services .services-technology button {
     margin: 15px 0 60px 0;
@@ -620,7 +623,7 @@ footer .copyright h4 {
   }
   #gallery .gallery-image img {
     width: 50%;
-    padding: 5px;
+    padding: 10px;
   }
 }
 
@@ -645,6 +648,18 @@ footer .copyright h4 {
   #eggs .photo-eggs .photo img {
     width: 50vw;
   }
+  #about-us {
+    padding: 0 50px 10px 50px;
+  }
+  #services .flex-services .services-list {
+    margin: 40px auto 0 auto;
+  }
+  #services .flex-services .services-production p {
+    margin: 0 50px;
+  }
+  #services .flex-services .services-technology p {
+    margin: 0 50px;
+  }
   footer .footer-nav ul {
     display: flex;
     flex-direction: column;
@@ -655,9 +670,18 @@ footer .copyright h4 {
 }
 
 @media (max-width: 420px) {
+  #about-us {
+    padding: 0 25px 10px 25px;
+  }
   #services .flex-services div {
     width: 100%;
     margin: 0 10px;
+  }
+  #services .flex-services .services-production p {
+    margin: 0 25px;
+  }
+  #services .flex-services .services-technology p {
+    margin: 0 25px;
   }
 }
 

@@ -323,11 +323,10 @@ nav ul .dropdown:hover .dropbtn {
   display: flex;
 }
 
-#services .flex-services .services-list ul li i {
-  font-size: 40px;
-  width: 70px;
-  text-align: center;
-  margin-right: 30px;
+#services .flex-services .services-list ul li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
 }
 
 #services .flex-services .services-production {
@@ -388,7 +387,7 @@ nav ul .dropdown:hover .dropbtn {
 
 #gallery .button-flex {
   text-align: center;
-  margin: 10px 0 50px 0;
+  margin: 20px 0 60px 0;
 }
 
 #gallery .button-flex .btn-gallery {
@@ -529,6 +528,7 @@ footer .copyright h4 {
   }
   header nav {
     height: 50px;
+    padding-top: 0;
   }
   header nav label {
     display: inline-block;
@@ -576,12 +576,8 @@ footer .copyright h4 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #eggs .photo-eggs .photo {
-    width: 100%;
-  }
   #eggs .photo-eggs .photo img {
     width: 30vw;
-    height: 30vw;
   }
   #eggs .photo-eggs .photo h2 {
     font-size: 32px;
@@ -591,27 +587,94 @@ footer .copyright h4 {
   }
   #about-us {
     height: auto;
-    padding: 0 20px;
+    padding: 0 20px 10px 20px;
   }
   #about-us p {
     font-size: 16px;
   }
   #services .flex-services div {
     width: 100%;
-    margin: 0 20px;
+    margin: 0 40px;
   }
-  #services .flex-services .services-list ul {
+  #services .flex-services .services-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 60px;
+  }
+  #services .flex-services:first-child img {
+    height: 300px;
+    padding-top: 30px;
+  }
+  #services .flex-services .services-production {
+    text-align: center;
+    padding-right: 0;
+  }
+  #services .flex-services .services-production h2 {
+    font-size: 24px;
+    padding-top: 60px;
+  }
+  #services .flex-services .services-production p {
+    font-size: 14px;
+  }
+  #services .flex-services .services-production button {
+    margin: 15px 0 60px 0;
+  }
+  #services .flex-services .services-technology {
+    text-align: center;
+    padding-left: 0;
+  }
+  #services .flex-services .services-technology h2 {
+    font-size: 24px;
+    padding-top: 60px;
+  }
+  #services .flex-services .services-technology p {
+    font-size: 14px;
+  }
+  #services .flex-services .services-technology button {
+    margin: 15px 0 60px 0;
+  }
+  #services .flex-services :nth-child(5) {
+    margin-top: 60px;
+  }
+  #gallery .gallery-image {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  #services .flex-services .services-list ul li {
-    display: inline-block;
+  #gallery .gallery-image img {
     width: 50%;
+    padding: 5px;
   }
-  #services .flex-services:first-child img {
-    height: 300px;
+}
+
+@media (max-width: 640px) {
+  #gallery .gallery-image img {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  #gallery .gallery-image :first-child {
+    padding-top: 0;
+  }
+  footer .footer-nav ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  #eggs .photo-eggs {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #eggs .photo-eggs .photo {
+    width: 100%;
+  }
+  #eggs .photo-eggs .photo img {
+    width: 40vw;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */

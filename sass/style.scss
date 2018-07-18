@@ -86,6 +86,7 @@
                         text-transform: uppercase;
                         padding: 0 10px;
                         border-right: 1px solid $greyFont;
+                        cursor: pointer;
                         &:hover {
                             background-color: $greyFont;
                             color: white;
@@ -96,8 +97,8 @@
                         position: absolute;
                         background-color: $greyFont;
                         min-width: 160px;
-                        z-index: 1;
                         margin-top: 10px;
+                        position: relative;
 
                         a {
                             color: white;
@@ -133,12 +134,13 @@
 
         #jumbotron {
             background-image: url("../images/jumbotron.jpg");
-            background-repeat: no-repeat;
             background-size: cover;
             height: 550px;
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100%;
+            background-position: center;
 
             .title-box {
                 width: 30%;
@@ -403,6 +405,10 @@
                     width: 50%;
                 }
             }
+            #about-us {
+                height: auto;
+                padding: 0 40px 10px 40px;
+            }
             #services {
                 .flex-services {
 
@@ -496,7 +502,9 @@
                             border-bottom: 1px solid $greyFont;
                             padding: 10px 0;
                             background-color: #E1E1E1;
-
+                            &:last-child {
+                                border: none;
+                            }
 
                             a {
                                 text-align: center;
@@ -511,9 +519,13 @@
                                 border: none;
                                 font-size: 24px;
                             }
-                        }
-                        .dropdown-content {
-                            width: 100%;
+
+                            .dropdown-content {
+                                width: 100%;
+                                a {
+                                    font-size: 20px;
+                                }
+                            }
                         }
                     }
 
@@ -547,7 +559,7 @@
             }
             #about-us {
                 height: auto;
-                padding: 0 20px 10px 20px;
+                padding: 0 40px 10px 40px;
                 p {
                     font-size: 16px;
                 }
@@ -598,7 +610,7 @@
                         }
                     }
                      :nth-child(5) {
-                        margin-top: 60px;
+                        margin-top: 20px;
                     }
                 }
             }
@@ -615,6 +627,11 @@
         }
 
         @media(max-width: 640px) {
+            #jumbotron {
+                .title-box {
+                    width: 90%;
+                }
+            }
             #gallery {
                 .gallery-image {
 
@@ -627,14 +644,7 @@
                     }
                 }
             }
-            footer {
-                .footer-nav {
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-            }
+
             #eggs {
                 .photo-eggs {
                     display: flex;
@@ -642,8 +652,31 @@
                     .photo {
                         width: 100%;
                         img {
-                            width: 40vw;
+                            width: 50vw;
                         }
+                    }
+                }
+            }
+            footer {
+                .footer-nav {
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                .copyright {
+                    padding: 0 5px;
+                }
+            }
+        }
+
+        @media(max-width: 420px) {
+
+            #services {
+                .flex-services {
+                    div {
+                        width: 100%;
+                        margin: 0 10px;
                     }
                 }
             }

@@ -102,6 +102,7 @@ nav ul .dropdown .dropbtn {
   text-transform: uppercase;
   padding: 0 10px;
   border-right: 1px solid #555555;
+  cursor: pointer;
 }
 
 nav ul .dropdown .dropbtn:hover {
@@ -114,8 +115,8 @@ nav ul .dropdown .dropdown-content {
   position: absolute;
   background-color: #555555;
   min-width: 160px;
-  z-index: 1;
   margin-top: 10px;
+  position: relative;
 }
 
 nav ul .dropdown .dropdown-content a {
@@ -151,7 +152,6 @@ nav ul .dropdown:hover .dropbtn {
 
 #jumbotron {
   background-image: url("../images/jumbotron.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   height: 550px;
   display: -ms-flexbox;
@@ -160,6 +160,8 @@ nav ul .dropdown:hover .dropbtn {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  width: 100%;
+  background-position: center;
 }
 
 #jumbotron .title-box {
@@ -462,6 +464,10 @@ footer .copyright h4 {
   #jumbotron .title-box {
     width: 50%;
   }
+  #about-us {
+    height: auto;
+    padding: 0 40px 10px 40px;
+  }
   #services .flex-services .services-list {
     display: -ms-flexbox;
     display: flex;
@@ -549,6 +555,9 @@ footer .copyright h4 {
     padding: 10px 0;
     background-color: #E1E1E1;
   }
+  header nav ul li:last-child {
+    border: none;
+  }
   header nav ul li a {
     text-align: center;
     display: block;
@@ -560,8 +569,11 @@ footer .copyright h4 {
     border: none;
     font-size: 24px;
   }
-  header nav ul .dropdown-content {
+  header nav ul .dropdown .dropdown-content {
     width: 100%;
+  }
+  header nav ul .dropdown .dropdown-content a {
+    font-size: 20px;
   }
   header nav #toggle:checked + ul {
     margin-top: 50px;
@@ -587,7 +599,7 @@ footer .copyright h4 {
   }
   #about-us {
     height: auto;
-    padding: 0 20px 10px 20px;
+    padding: 0 40px 10px 40px;
   }
   #about-us p {
     font-size: 16px;
@@ -636,7 +648,7 @@ footer .copyright h4 {
     margin: 15px 0 60px 0;
   }
   #services .flex-services :nth-child(5) {
-    margin-top: 60px;
+    margin-top: 20px;
   }
   #gallery .gallery-image {
     display: -ms-flexbox;
@@ -651,18 +663,15 @@ footer .copyright h4 {
 }
 
 @media (max-width: 640px) {
+  #jumbotron .title-box {
+    width: 90%;
+  }
   #gallery .gallery-image img {
     width: 100%;
     padding: 5px 10px;
   }
   #gallery .gallery-image :first-child {
     padding-top: 0;
-  }
-  footer .footer-nav ul {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
   }
   #eggs .photo-eggs {
     display: -ms-flexbox;
@@ -674,7 +683,23 @@ footer .copyright h4 {
     width: 100%;
   }
   #eggs .photo-eggs .photo img {
-    width: 40vw;
+    width: 50vw;
+  }
+  footer .footer-nav ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  footer .copyright {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  #services .flex-services div {
+    width: 100%;
+    margin: 0 10px;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */

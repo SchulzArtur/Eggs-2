@@ -95,7 +95,6 @@ nav ul .dropdown .dropbtn {
   outline: none;
   color: #555555;
   background-color: inherit;
-  font-family: inherit;
   display: inline-block;
   text-transform: uppercase;
   padding: 0 10px;
@@ -107,7 +106,6 @@ nav ul .dropdown .dropdown-content {
   display: none;
   position: absolute;
   background-color: #555555;
-  min-width: 160px;
   margin-top: 10px;
 }
 
@@ -126,11 +124,6 @@ nav ul .dropdown .dropdown-content a:hover {
   background-color: #E1E1E1;
   color: #555555;
   border-radius: 3px;
-}
-
-nav ul .dropdown:hover {
-  color: white;
-  border-radius: 3px 3px 0 0;
 }
 
 nav ul .dropdown:hover .dropdown-content {
@@ -216,12 +209,12 @@ nav ul .dropdown:hover .dropbtn {
 }
 
 #eggs .photo-eggs .photo h2 {
-  font-size: 42px;
+  font-size: 35px;
   padding-top: 10px;
 }
 
 #eggs .photo-eggs .photo p {
-  font-size: 32px;
+  font-size: 25px;
 }
 
 #eggs .photo-eggs .photo button {
@@ -245,7 +238,6 @@ nav ul .dropdown:hover .dropbtn {
 
 #about-us {
   background-image: url("../images/bg-about-us.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   height: 550px;
   text-align: center;
@@ -305,8 +297,6 @@ nav ul .dropdown:hover .dropbtn {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
   -ms-flex-direction: column;
       flex-direction: column;
 }

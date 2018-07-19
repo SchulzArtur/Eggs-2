@@ -79,7 +79,6 @@
                         outline: none;
                         color: $greyFont;
                         background-color: inherit;
-                        font-family: inherit;
                         display: inline-block;
                         text-transform: uppercase;
                         padding: 0 10px;
@@ -90,7 +89,6 @@
                         display: none;
                         position: absolute;
                         background-color: $greyFont;
-                        min-width: 160px;
                         margin-top: 10px;
 
 
@@ -112,8 +110,6 @@
                         }
                     }
                     &:hover {
-                        color: white;
-                        border-radius: 3px 3px 0 0;
                         .dropdown-content {
                             display: block;
                         }
@@ -184,11 +180,11 @@
                 .photo {
                     text-align: center;
                     h2 {
-                        font-size: 42px;
+                        font-size: 35px;
                         padding-top: 10px;
                     }
                     p {
-                        font-size: 32px;
+                        font-size: 25px;
                     }
                     button {
                         background-color: $greyFont;
@@ -214,7 +210,6 @@
 
         #about-us {
             background-image: url("../images/bg-about-us.jpg");
-            background-repeat: no-repeat;
             background-size: cover;
             height: 550px;
             text-align: center;
@@ -264,7 +259,6 @@
                         margin-left: 80px;
                         list-style-type: none;
                         display: flex;
-                        justify-content: flex-start;
                         flex-direction: column;
 
                         li {

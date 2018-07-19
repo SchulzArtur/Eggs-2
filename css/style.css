@@ -373,6 +373,10 @@ nav ul .dropdown:hover .dropbtn {
   font-weight: bold;
 }
 
+#gallery #myDIV {
+  padding-top: 20px;
+}
+
 footer {
   background-color: #707070;
 }

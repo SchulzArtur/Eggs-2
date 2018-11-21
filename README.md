@@ -1,1 +1,1 @@
-https://schulzartur.github.io/Eggs-2/
+https://schulzartur.github.io/Website-Eggs-2/
